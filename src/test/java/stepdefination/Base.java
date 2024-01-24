@@ -21,15 +21,12 @@ public class Base
 		driver.get(string);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-
-		
 	}
 
 @When("user enter {string} and {string}")
 public void user_enter_and(String username, String password) {
  		driver.findElement(By.xpath("//input[@name='username']")).click();
 		driver.findElement(By.xpath("//input[@name='username']")).sendKeys(username);
-		
 //		password
 		driver.findElement(By.xpath("//input[@name='password']")).click();
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys(password);
