@@ -32,8 +32,6 @@ public void user_enter_and(String username, String password) {
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys(password);
 //								signin button
 		driver.findElement(By.xpath("//button")).click();
-		
-	
 	}
 
 @Then("user should successfully access page")
