@@ -7,6 +7,11 @@ public void test()
 	System.out.println("testing github");
 }
 
+public void newmethod()
+{
+	
+}
+
 }
 
 
